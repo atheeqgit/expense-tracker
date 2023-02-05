@@ -10,7 +10,7 @@ const form = document.querySelector("form");
 
 const LSarray = JSON.parse(localStorage.getItem("transactionArr"));
 
-let transactionArr = LSarray.length > 0 ? LSarray : [];
+let transactionArr = localStorage.getItem('transactions') !== null ? LSarray : [];
 
 addTransactionToDOM();
 
