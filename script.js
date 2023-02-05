@@ -15,11 +15,14 @@ let transactionArr = localStorage.getItem('transactions') !== null ? LSarray : [
 addTransactionToDOM();
 
 submitBtn.addEventListener("click", (e) => {
-  addTransaction();
-  e.preventDefault();
+e.preventDefault();
+  addTransaction(e);
+ 
 });
 
-function addTransaction() {
+function addTransaction(e) {
+e.preventDefault();
+
   let text = textInput.value;
 
   if (text.trim() === "" || amountInput.value.trim() === "") {
