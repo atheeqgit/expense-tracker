@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- ?========= REMIXIONS ======= -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- ?====== GOOGLE FONTS LINK ======= -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ?======  TITLE  ======= -->
+    <title>Expence calculator</title>
+  </head>
+  <body>
+    <div class="tracker-container">
+      <h1 class="title">Expense tracker</h1>
+      <div class="balance-box">
+        <h2>your-balance</h2>
+        <div id="balance">0₹</div>
+        <div class="tracker-box">
+          <div>
+            <h3>Income</h3>
+            <p id="income">0₹</p>
+          </div>
+          <div>
+            <h3>Expense</h3>
+            <p id="expense">0₹</p>
+          </div>
+        </div>
+      </div>
+      <!-- ₹ -->
+      <div class="history-box">
+        <h2>History</h2>
+        <ul id="history-ul">
+          <!-- <li class="minus-li">
+            <p class="text">bike service</p>
+            <p class="cash">-4000</p>
+            <i class="ri-close-line"></i>
+          </li>
+          <li class="">
+            <p class="text">work</p>
+            <p class="cash">+4000</p>
+            <i class="ri-close-line"></i>
+          </li> -->
+        </ul>
+      </div>
+      <form id="form">
+        <h2>Add new transaction</h2>
+        <div class="form-control">
+          <label for="text-input">text</label>
+          <input type="text" id="text-input" />
+        </div>
+        <div class="form-control">
+          <label for="money-input">
+            Amount <br />
+            (negative - expense, positive - income)
+          </label>
+          <input type="number" id="money-input" />
+        </div>
+        <button type="submit" id="submit-btn">Add transaction</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
